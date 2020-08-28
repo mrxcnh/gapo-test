@@ -1,5 +1,5 @@
 def calc(formula: str, data: dict) -> float:
-    for i in data:
+    for i in data.keys():
         formula = formula.replace(i, str(data[i]))
     return eval(formula)
 
